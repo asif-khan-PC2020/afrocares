@@ -4,23 +4,26 @@
 
 /* ── CSS Variables ── */
 :root {
-  --primary: #1a6b3c;
-  --primary-dark: #145530;
-  --primary-light: #e8f5ee;
+  --primary: #0055B7;
+  --primary-dark: #003B82;
+  --primary-light: #EAF5FF;
+  --secondary: #078FE9;
   --accent: #f97316;
   --accent-dark: #ea6b05;
   --accent-light: #fff4ed;
-  --blue: #2563eb;
-  --blue-light: #eff6ff;
+  --blue: #078FE9;
+  --blue-light: #EAF5FF;
   --red: #dc2626;
   --red-light: #fef2f2;
-  --text: #1e293b;
-  --text-muted: #64748b;
+  --text: #172B45;
+  --text-muted: #526579;
   --text-light: #94a3b8;
-  --border: #e2e8f0;
-  --bg: #ffffff;
-  --bg-alt: #f8fafc;
+  --border: #DCE8F3;
+  --bg: #FFFFFF;
+  --bg-alt: #F3F7FB;
   --bg-dark: #0f172a;
+  --gradient: linear-gradient(110deg, #0055B7, #078FE9);
+  --button-hover: #003B82;
   --shadow-sm: 0 1px 3px rgba(0,0,0,.08);
   --shadow: 0 4px 16px rgba(0,0,0,.10);
   --shadow-lg: 0 12px 40px rgba(0,0,0,.14);
@@ -86,7 +89,7 @@ button { cursor: pointer; border: none; background: none; }
   border: 2px solid transparent;
 }
 .btn-primary { background: var(--primary); color: #fff; }
-.btn-primary:hover { background: var(--primary-dark); transform: translateY(-2px); box-shadow: 0 8px 24px rgba(26,107,60,.3); }
+.btn-primary:hover { background: var(--primary-dark); transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,85,183,.3); }
 .btn-outline { background: transparent; color: var(--primary); border-color: var(--primary); }
 .btn-outline:hover { background: var(--primary); color: #fff; transform: translateY(-2px); }
 .btn-warning { background: var(--red); color: #fff; }
@@ -124,6 +127,19 @@ button { cursor: pointer; border: none; background: none; }
   display: flex; align-items: center; justify-content: center;
   color: #fff;
   font-size: 1.3rem;
+}
+.logo-icon-img {
+  background: transparent;
+  border-radius: 0;
+  padding: 0;
+  overflow: visible;
+}
+.logo-icon-img img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  border-radius: 0;
+  display: block;
 }
 .logo-text { display: flex; flex-direction: column; }
 .logo-text span { font-size: 1.3rem; font-weight: 800; line-height: 1; }
@@ -178,7 +194,7 @@ button { cursor: pointer; border: none; background: none; }
   justify-content: center;
   position: relative;
   overflow: hidden;
-  background: linear-gradient(135deg, #0f2d1a 0%, #1a6b3c 50%, #145530 100%);
+  background: linear-gradient(135deg, #001e4d 0%, #0055B7 50%, #003B82 100%);
   padding: 120px 0 80px;
   text-align: center;
 }
@@ -217,7 +233,7 @@ button { cursor: pointer; border: none; background: none; }
   line-height: 1.15;
   margin-bottom: 24px;
 }
-.hero h1 .highlight { color: #6fddaa; }
+.hero h1 .highlight { color: #7ec8ff; }
 .hero-sub { font-size: 1.1rem; color: rgba(255,255,255,.82); max-width: 680px; margin: 0 auto 36px; }
 
 .hero-actions { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; margin-bottom: 56px; }
@@ -238,7 +254,7 @@ button { cursor: pointer; border: none; background: none; }
   gap: 0;
 }
 .stat { text-align: center; padding: 0 32px; }
-.stat strong { display: block; font-size: 2rem; font-weight: 800; color: #6fddaa; }
+.stat strong { display: block; font-size: 2rem; font-weight: 800; color: #7ec8ff; }
 .stat span { font-size: .82rem; color: rgba(255,255,255,.7); }
 .stat-divider { width: 1px; height: 48px; background: rgba(255,255,255,.2); flex-shrink: 0; }
 
@@ -284,7 +300,7 @@ button { cursor: pointer; border: none; background: none; }
   width: 100%;
   aspect-ratio: 1;
   max-width: 420px;
-  background: linear-gradient(135deg, var(--primary-light), #c8f0d9);
+  background: linear-gradient(135deg, var(--primary-light), #bddeff);
   border-radius: var(--radius-lg);
   display: flex;
   align-items: center;
@@ -527,7 +543,7 @@ button { cursor: pointer; border: none; background: none; }
   font-size: 1.3rem;
   font-weight: 800;
   flex-shrink: 0;
-  box-shadow: 0 4px 16px rgba(26,107,60,.3);
+  box-shadow: 0 4px 16px rgba(0,85,183,.3);
 }
 .step-content {
   background: #fff;
@@ -595,13 +611,12 @@ button { cursor: pointer; border: none; background: none; }
 .dot.active { background: var(--accent); width: 24px; border-radius: 4px; }
 
 /* ══════════════ DONATE ══════════════ */
-.donate-section { background: var(--primary); padding: 80px 0; }
-.donate-box { display: grid; grid-template-columns: 1.4fr 1fr; gap: 64px; align-items: center; }
+.donate-section { background: var(--primary); padding: 80px 0; }.donate-box { display: grid; grid-template-columns: 1.4fr 1fr; gap: 64px; align-items: center; }
 .donate-text h2 { font-family: var(--font-display); font-size: clamp(1.6rem,3vw,2.2rem); color: #fff; margin-bottom: 16px; }
 .donate-text p { color: rgba(255,255,255,.75); margin-bottom: 28px; }
 .donate-impact { display: flex; gap: 24px; flex-wrap: wrap; }
 .impact-item { background: rgba(255,255,255,.12); border-radius: var(--radius); padding: 16px 20px; text-align: center; }
-.impact-item strong { display: block; font-size: 1.3rem; color: #6fddaa; font-weight: 800; }
+.impact-item strong { display: block; font-size: 1.3rem; color: #7ec8ff; font-weight: 800; }
 .impact-item span { font-size: .78rem; color: rgba(255,255,255,.7); }
 .donate-action {
   background: rgba(255,255,255,.08);
@@ -684,7 +699,7 @@ button { cursor: pointer; border: none; background: none; }
 .form-group textarea:focus {
   border-color: var(--primary);
   background: #fff;
-  box-shadow: 0 0 0 3px rgba(26,107,60,.08);
+  box-shadow: 0 0 0 3px rgba(0,85,183,.08);
 }
 .form-group textarea { resize: vertical; min-height: 120px; }
 .form-check {
