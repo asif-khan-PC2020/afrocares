@@ -523,6 +523,22 @@ function applyTranslations(lang) {
   /* Store preference */
   localStorage.setItem('afrocares-lang', lang);
   currentLang = lang;
+
+  /* Flip quote icons: fa-quote-left ↔ fa-quote-right */
+  document.querySelectorAll('.quote-icon i').forEach(icon => {
+    if (lang === 'ar') {
+      icon.classList.replace('fa-quote-left', 'fa-quote-right');
+    } else {
+      icon.classList.replace('fa-quote-right', 'fa-quote-left');
+    }
+  });
+
+  /* Fix mobile nav-cta margin in RTL */
+  const navCta = document.querySelector('.nav-links .nav-cta');
+  if (navCta) {
+    navCta.style.marginLeft  = lang === 'ar' ? '0' : '';
+    navCta.style.marginRight = lang === 'ar' ? '0' : '';
+  }
 }
 
 /* ════════════════════════════════════════
