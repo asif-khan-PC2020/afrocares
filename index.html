@@ -1,18 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="AfroCares – India's trusted NGO connecting African and international patients with certified hospitals, free of charge. We fight medical tourism scams and ensure safe, quality treatment in India." />
-  <meta name="keywords" content="AfroCares, medical tourism India, NGO India, free medical help, Africa India healthcare, avoid medical scam India, international patients India" />
+  <meta name="description" content="AfroCares – India's trusted NGO connecting African and international patients with certified hospitals, free of charge." />
   <title>AfroCares | Medical Tourism NGO – India</title>
 
-  <!-- Fonts & Icons -->
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700;800&family=Cairo:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
-
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -24,19 +22,24 @@
         <div class="logo-icon logo-icon-img"><img src="logo.jpg" alt="AfroCares Logo" /></div>
         <div class="logo-text">
           <span class="logo-afro">Afro</span><span class="logo-cares">Cares</span>
-          <small>Medical NGO – India</small>
+          <small data-i18n="nav-tagline">Medical NGO – India</small>
         </div>
       </a>
       <ul class="nav-links" id="navLinks">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#why-india">Why India</a></li>
-        <li><a href="#hospitals">Hospitals</a></li>
-        <li><a href="#process">How It Works</a></li>
-        <li><a href="#testimonials">Stories</a></li>
-        <li><a href="#contact" class="nav-cta">Get Free Help</a></li>
+        <li><a href="#home"         data-i18n="nav-home">Home</a></li>
+        <li><a href="#about"        data-i18n="nav-about">About</a></li>
+        <li><a href="#services"     data-i18n="nav-services">Services</a></li>
+        <li><a href="#why-india"    data-i18n="nav-why">Why India</a></li>
+        <li><a href="#hospitals"    data-i18n="nav-hospitals">Hospitals</a></li>
+        <li><a href="#process"      data-i18n="nav-process">How It Works</a></li>
+        <li><a href="#testimonials" data-i18n="nav-stories">Stories</a></li>
+        <li><a href="#contact" class="nav-cta" data-i18n="nav-cta">Get Free Help</a></li>
       </ul>
+      <!-- Language Toggle -->
+      <button class="lang-btn" id="langToggle" aria-label="Switch language">
+        <i class="fa-solid fa-globe"></i>
+        <span id="langLabel">عربي</span>
+      </button>
       <button class="hamburger" id="hamburger" aria-label="Toggle menu">
         <span></span><span></span><span></span>
       </button>
@@ -51,39 +54,38 @@
       <div class="shape shape-3"></div>
     </div>
     <div class="container hero-content">
-      <div class="hero-badge"><i class="fa-solid fa-shield-halved"></i> 100% Free · Verified · NGO-Certified</div>
-      <h1>Your Trusted Bridge to <span class="highlight">World-Class Medical Care</span> in India</h1>
-      <p class="hero-sub">
-        AfroCares is a registered Indian NGO dedicated to helping African and international patients access
-        genuine, affordable medical treatment in India — completely free of charge. We protect you from scammers
-        and guide you every step of the way.
-      </p>
+      <div class="hero-badge">
+        <i class="fa-solid fa-shield-halved"></i>
+        <span data-i18n="hero-badge">100% Free · Verified · NGO-Certified</span>
+      </div>
+      <h1 data-i18n-html="hero-title">Your Trusted Bridge to <span class="highlight">World-Class Medical Care</span> in India</h1>
+      <p class="hero-sub" data-i18n="hero-sub">AfroCares is a registered Indian NGO dedicated to helping African and international patients access genuine, affordable medical treatment in India — completely free of charge. We protect you from scammers and guide you every step of the way.</p>
       <div class="hero-actions">
-        <a href="#contact" class="btn btn-primary"><i class="fa-solid fa-paper-plane"></i> Get Free Assistance</a>
-        <a href="#process" class="btn btn-outline"><i class="fa-solid fa-play-circle"></i> How It Works</a>
+        <a href="#contact" class="btn btn-primary"><i class="fa-solid fa-paper-plane"></i> <span data-i18n="hero-btn1">Get Free Assistance</span></a>
+        <a href="#process"  class="btn btn-outline"><i class="fa-solid fa-play-circle"></i> <span data-i18n="hero-btn2">How It Works</span></a>
       </div>
       <div class="hero-stats">
-        <div class="stat"><strong>5,000+</strong><span>Patients Helped</span></div>
+        <div class="stat"><strong>5,000+</strong><span data-i18n="stat1">Patients Helped</span></div>
         <div class="stat-divider"></div>
-        <div class="stat"><strong>50+</strong><span>Partner Hospitals</span></div>
+        <div class="stat"><strong>50+</strong><span data-i18n="stat2">Partner Hospitals</span></div>
         <div class="stat-divider"></div>
-        <div class="stat"><strong>30+</strong><span>Countries Served</span></div>
+        <div class="stat"><strong>30+</strong><span data-i18n="stat3">Countries Served</span></div>
         <div class="stat-divider"></div>
-        <div class="stat"><strong>₹0</strong><span>Our Fee</span></div>
+        <div class="stat"><strong>₹0</strong><span data-i18n="stat4">Our Fee</span></div>
       </div>
     </div>
     <div class="hero-scroll"><a href="#about"><i class="fa-solid fa-chevron-down"></i></a></div>
   </section>
 
-  <!-- ══════════════ MARQUEE ALERT ══════════════ -->
+  <!-- ══════════════ MARQUEE ══════════════ -->
   <div class="marquee-bar">
-    <div class="marquee-track">
-      <span><i class="fa-solid fa-triangle-exclamation"></i> SCAM ALERT: Never pay upfront to agents claiming to arrange Indian medical visas or treatment packages without verification.</span>
-      <span><i class="fa-solid fa-shield-halved"></i> AfroCares verifies every hospital — our service is 100% FREE.</span>
-      <span><i class="fa-solid fa-phone"></i> Contact us BEFORE travelling. We save lives and money.</span>
-      <span><i class="fa-solid fa-triangle-exclamation"></i> SCAM ALERT: Never pay upfront to agents claiming to arrange Indian medical visas or treatment packages without verification.</span>
-      <span><i class="fa-solid fa-shield-halved"></i> AfroCares verifies every hospital — our service is 100% FREE.</span>
-      <span><i class="fa-solid fa-phone"></i> Contact us BEFORE travelling. We save lives and money.</span>
+    <div class="marquee-track" id="marqueeTrack">
+      <span><i class="fa-solid fa-triangle-exclamation"></i> <span data-i18n="marquee1">SCAM ALERT: Never pay upfront to agents claiming to arrange Indian medical visas or treatment packages without verification.</span></span>
+      <span><i class="fa-solid fa-shield-halved"></i> <span data-i18n="marquee2">AfroCares verifies every hospital — our service is 100% FREE.</span></span>
+      <span><i class="fa-solid fa-phone"></i> <span data-i18n="marquee3">Contact us BEFORE travelling. We save lives and money.</span></span>
+      <span><i class="fa-solid fa-triangle-exclamation"></i> <span data-i18n="marquee1">SCAM ALERT: Never pay upfront to agents claiming to arrange Indian medical visas or treatment packages without verification.</span></span>
+      <span><i class="fa-solid fa-shield-halved"></i> <span data-i18n="marquee2">AfroCares verifies every hospital — our service is 100% FREE.</span></span>
+      <span><i class="fa-solid fa-phone"></i> <span data-i18n="marquee3">Contact us BEFORE travelling. We save lives and money.</span></span>
     </div>
   </div>
 
@@ -93,67 +95,56 @@
       <div class="about-grid">
         <div class="about-image-col">
           <div class="about-img-wrapper">
-            <div class="about-img-placeholder">
-              <i class="fa-solid fa-hand-holding-medical"></i>
-            </div>
+            <div class="about-img-placeholder"><i class="fa-solid fa-hand-holding-medical"></i></div>
             <div class="about-badge-card">
               <i class="fa-solid fa-award"></i>
               <div>
-                <strong>NGO Registered</strong>
-                <small>Govt. of India Certified</small>
+                <strong data-i18n="about-badge-title">NGO Registered</strong>
+                <small data-i18n="about-badge-sub">Govt. of India Certified</small>
               </div>
             </div>
           </div>
         </div>
         <div class="about-text-col">
-          <div class="section-label">About AfroCares</div>
-          <h2 class="section-title">We Are More Than a Medical Coordinator — We Are Your Guardian</h2>
-          <p>
-            AfroCares was founded by healthcare professionals and social workers who witnessed the exploitation of
-            African and international patients seeking medical treatment in India. Patients were losing thousands of
-            dollars to fraudulent agents, being sent to unaccredited clinics, and left without support in a foreign land.
-          </p>
-          <p>
-            As a registered Non-Governmental Organisation (NGO) in India, we bridge the gap between international
-            patients and India's world-class hospitals — <strong>completely free of cost</strong>. We receive no commission
-            from hospitals. Our funding comes from donations and grants, ensuring our advice is always in
-            <em>your</em> best interest.
-          </p>
+          <div class="section-label" data-i18n="about-label">About AfroCares</div>
+          <h2 class="section-title" data-i18n="about-title">We Are More Than a Medical Coordinator — We Are Your Guardian</h2>
+          <p data-i18n="about-p1">AfroCares was founded by healthcare professionals and social workers who witnessed the exploitation of African and international patients seeking medical treatment in India. Patients were losing thousands of dollars to fraudulent agents, being sent to unaccredited clinics, and left without support in a foreign land.</p>
+          <p data-i18n="about-p2">As a registered Non-Governmental Organisation (NGO) in India, we bridge the gap between international patients and India's world-class hospitals — <strong>completely free of cost</strong>. We receive no commission from hospitals. Our funding comes from donations and grants, ensuring our advice is always in <em>your</em> best interest.</p>
           <div class="about-pillars">
-            <div class="pillar"><i class="fa-solid fa-check-circle"></i> Zero fees for patients</div>
-            <div class="pillar"><i class="fa-solid fa-check-circle"></i> Independent from hospitals</div>
-            <div class="pillar"><i class="fa-solid fa-check-circle"></i> Multilingual support team</div>
-            <div class="pillar"><i class="fa-solid fa-check-circle"></i> On-ground India presence</div>
+            <div class="pillar"><i class="fa-solid fa-check-circle"></i> <span data-i18n="pillar1">Zero fees for patients</span></div>
+            <div class="pillar"><i class="fa-solid fa-check-circle"></i> <span data-i18n="pillar2">Independent from hospitals</span></div>
+            <div class="pillar"><i class="fa-solid fa-check-circle"></i> <span data-i18n="pillar3">Multilingual support team</span></div>
+            <div class="pillar"><i class="fa-solid fa-check-circle"></i> <span data-i18n="pillar4">On-ground India presence</span></div>
           </div>
-          <a href="#contact" class="btn btn-primary mt-20">Talk to Our Team</a>
+          <a href="#contact" class="btn btn-primary mt-20"><span data-i18n="about-btn">Talk to Our Team</span></a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ══════════════ MISSION / VALUES ══════════════ -->
+  <!-- ══════════════ VALUES ══════════════ -->
   <section class="section values-section">
     <div class="container">
       <div class="section-header center">
-        <div class="section-label">Our Mission & Values</div>
-        <h2 class="section-title">Why We Exist</h2>
-        <p class="section-desc">AfroCares stands on three unshakeable pillars that guide every decision we make.</p>
+        <div class="section-label" data-i18n="values-label">Our Mission & Values</div>
+        <h2 class="section-title" data-i18n="values-title">Why We Exist</h2>
+        <p class="section-desc" data-i18n="values-desc">AfroCares stands on three unshakeable pillars that guide every decision we make.</p>
       </div>
       <div class="values-grid">
         <div class="value-card">
           <div class="value-icon orange"><i class="fa-solid fa-shield-halved"></i></div>
-          <h3>Protection</h3>
-          <p>We shield patients from fraudulent medical agents, overpriced packages, and unaccredited facilities that prey on vulnerable patients seeking care abroad.</p>
+          <h3 data-i18n="val1-title">Protection</h3>
+          <p data-i18n="val1-desc">We shield patients from fraudulent medical agents, overpriced packages, and unaccredited facilities that prey on vulnerable patients seeking care abroad.</p>
         </div>
         <div class="value-card">
           <div class="value-icon green"><i class="fa-solid fa-stethoscope"></i></div>
-          <h3>Quality Care</h3>
-          <p>We connect patients only to NABH-accredited and JCI-certified hospitals with proven track records in the specific treatments patients need.</p>
+          <h3 data-i18n="val2-title">Quality Care</h3>
+          <p data-i18n="val2-desc">We connect patients only to NABH-accredited and JCI-certified hospitals with proven track records in the specific treatments patients need.</p>
         </div>
         <div class="value-card">
           <div class="value-icon blue"><i class="fa-solid fa-globe"></i></div>
-          <h3>Access for All</h3>
-          <p>Medical tourism should not be a luxury. We advocate for affordable treatment options and help patients find the right care regardless of their budget.</p>
+          <h3 data-i18n="val3-title">Access for All</h3>
+          <p data-i18n="val3-desc">Medical tourism should not be a luxury. We advocate for affordable treatment options and help patients find the right care regardless of their budget.</p>
         </div>
       </div>
     </div>
@@ -165,17 +156,17 @@
       <div class="scam-box">
         <div class="scam-icon"><i class="fa-solid fa-triangle-exclamation"></i></div>
         <div class="scam-content">
-          <h3>⚠️ Know the Signs of Medical Tourism Scams in India</h3>
+          <h3 data-i18n="scam-title">⚠️ Know the Signs of Medical Tourism Scams in India</h3>
           <div class="scam-list">
-            <div class="scam-item"><i class="fa-solid fa-xmark"></i> Agents demanding large upfront payments before you arrive</div>
-            <div class="scam-item"><i class="fa-solid fa-xmark"></i> Unverifiable hospital accreditation or credentials</div>
-            <div class="scam-item"><i class="fa-solid fa-xmark"></i> No written treatment plans or cost estimates</div>
-            <div class="scam-item"><i class="fa-solid fa-xmark"></i> Pressure to decide quickly or "lose the spot"</div>
-            <div class="scam-item"><i class="fa-solid fa-xmark"></i> No physical address or India-registered contact number</div>
-            <div class="scam-item"><i class="fa-solid fa-xmark"></i> Promising unrealistic cure rates for serious conditions</div>
+            <div class="scam-item"><i class="fa-solid fa-xmark"></i> <span data-i18n="scam1">Agents demanding large upfront payments before you arrive</span></div>
+            <div class="scam-item"><i class="fa-solid fa-xmark"></i> <span data-i18n="scam2">Unverifiable hospital accreditation or credentials</span></div>
+            <div class="scam-item"><i class="fa-solid fa-xmark"></i> <span data-i18n="scam3">No written treatment plans or cost estimates</span></div>
+            <div class="scam-item"><i class="fa-solid fa-xmark"></i> <span data-i18n="scam4">Pressure to decide quickly or "lose the spot"</span></div>
+            <div class="scam-item"><i class="fa-solid fa-xmark"></i> <span data-i18n="scam5">No physical address or India-registered contact number</span></div>
+            <div class="scam-item"><i class="fa-solid fa-xmark"></i> <span data-i18n="scam6">Promising unrealistic cure rates for serious conditions</span></div>
           </div>
-          <p class="scam-cta-text">If you've experienced any of the above — <strong>contact AfroCares immediately</strong> before making any payments.</p>
-          <a href="#contact" class="btn btn-warning">Report a Suspected Scam</a>
+          <p class="scam-cta-text" data-i18n="scam-cta">If you've experienced any of the above — <strong>contact AfroCares immediately</strong> before making any payments.</p>
+          <a href="#contact" class="btn btn-warning"><span data-i18n="scam-btn">Report a Suspected Scam</span></a>
         </div>
       </div>
     </div>
@@ -185,66 +176,56 @@
   <section class="section services-section" id="services">
     <div class="container">
       <div class="section-header center">
-        <div class="section-label">What We Offer</div>
-        <h2 class="section-title">Our Free Services for International Patients</h2>
-        <p class="section-desc">From your first inquiry to your safe return home — AfroCares supports you at every stage, at zero cost.</p>
+        <div class="section-label" data-i18n="svc-label">What We Offer</div>
+        <h2 class="section-title" data-i18n="svc-title">Our Free Services for International Patients</h2>
+        <p class="section-desc" data-i18n="svc-desc">From your first inquiry to your safe return home — AfroCares supports you at every stage, at zero cost.</p>
       </div>
       <div class="services-grid">
-
         <div class="service-card">
           <div class="service-icon"><i class="fa-solid fa-hospital"></i></div>
-          <h3>Hospital Matching</h3>
-          <p>We match you to the best-suited, accredited hospital for your specific medical condition, budget, and location preference within India.</p>
+          <h3 data-i18n="svc1-title">Hospital Matching</h3>
+          <p data-i18n="svc1-desc">We match you to the best-suited, accredited hospital for your specific medical condition, budget, and location preference within India.</p>
         </div>
-
         <div class="service-card">
           <div class="service-icon"><i class="fa-solid fa-user-doctor"></i></div>
-          <h3>Second Medical Opinion</h3>
-          <p>Unsure about a diagnosis? We arrange free virtual consultations with leading Indian specialists to give you a verified second opinion.</p>
+          <h3 data-i18n="svc2-title">Second Medical Opinion</h3>
+          <p data-i18n="svc2-desc">Unsure about a diagnosis? We arrange free virtual consultations with leading Indian specialists to give you a verified second opinion.</p>
         </div>
-
         <div class="service-card">
           <div class="service-icon"><i class="fa-solid fa-passport"></i></div>
-          <h3>Medical Visa Guidance</h3>
-          <p>We guide you through the Indian medical visa process, documentation requirements, and invitation letter procedures — step by step.</p>
+          <h3 data-i18n="svc3-title">Medical Visa Guidance</h3>
+          <p data-i18n="svc3-desc">We guide you through the Indian medical visa process, documentation requirements, and invitation letter procedures — step by step.</p>
         </div>
-
         <div class="service-card">
           <div class="service-icon"><i class="fa-solid fa-file-medical"></i></div>
-          <h3>Treatment Cost Estimates</h3>
-          <p>Receive transparent, written cost estimates from multiple hospitals so you can compare and make an informed, pressure-free decision.</p>
+          <h3 data-i18n="svc4-title">Treatment Cost Estimates</h3>
+          <p data-i18n="svc4-desc">Receive transparent, written cost estimates from multiple hospitals so you can compare and make an informed, pressure-free decision.</p>
         </div>
-
         <div class="service-card">
           <div class="service-icon"><i class="fa-solid fa-plane-arrival"></i></div>
-          <h3>Arrival & Logistics Support</h3>
-          <p>Airport pickup coordination, accommodation guidance near your hospital, and local SIM/connectivity help on arrival in India.</p>
+          <h3 data-i18n="svc5-title">Arrival & Logistics Support</h3>
+          <p data-i18n="svc5-desc">Airport pickup coordination, accommodation guidance near your hospital, and local SIM/connectivity help on arrival in India.</p>
         </div>
-
         <div class="service-card">
           <div class="service-icon"><i class="fa-solid fa-language"></i></div>
-          <h3>Language & Interpretation</h3>
-          <p>Our multilingual team and network of interpreters help bridge language barriers between you and your medical team throughout treatment.</p>
+          <h3 data-i18n="svc6-title">Language & Interpretation</h3>
+          <p data-i18n="svc6-desc">Our multilingual team and network of interpreters help bridge language barriers between you and your medical team throughout treatment.</p>
         </div>
-
         <div class="service-card">
           <div class="service-icon"><i class="fa-solid fa-shield-halved"></i></div>
-          <h3>Scam Investigation & Help</h3>
-          <p>If you've been defrauded by an agent or fake hospital, we help you report it to Indian authorities and guide you on next steps.</p>
+          <h3 data-i18n="svc7-title">Scam Investigation & Help</h3>
+          <p data-i18n="svc7-desc">If you've been defrauded by an agent or fake hospital, we help you report it to Indian authorities and guide you on next steps.</p>
         </div>
-
         <div class="service-card">
           <div class="service-icon"><i class="fa-solid fa-heart-pulse"></i></div>
-          <h3>Post-Treatment Follow-Up</h3>
-          <p>We stay with you after treatment — coordinating follow-up care, medical records, and connecting you with doctors for teleconsultations back home.</p>
+          <h3 data-i18n="svc8-title">Post-Treatment Follow-Up</h3>
+          <p data-i18n="svc8-desc">We stay with you after treatment — coordinating follow-up care, medical records, and connecting you with doctors for teleconsultations back home.</p>
         </div>
-
         <div class="service-card">
           <div class="service-icon"><i class="fa-solid fa-users"></i></div>
-          <h3>Community & Support Groups</h3>
-          <p>Join our WhatsApp and online communities of verified patients, ask questions, share experiences, and get peer support from people who've been through it.</p>
+          <h3 data-i18n="svc9-title">Community & Support Groups</h3>
+          <p data-i18n="svc9-desc">Join our WhatsApp and online communities of verified patients, ask questions, share experiences, and get peer support from people who've been through it.</p>
         </div>
-
       </div>
     </div>
   </section>
@@ -254,37 +235,36 @@
     <div class="container">
       <div class="why-grid">
         <div class="why-text-col">
-          <div class="section-label">Why Choose India</div>
-          <h2 class="section-title">India – The World's Medical Tourism Capital</h2>
-          <p>India is globally recognised as one of the top destinations for medical treatment, combining international-quality healthcare with costs that are 60–90% lower than Western countries.</p>
-
+          <div class="section-label" data-i18n="why-label">Why Choose India</div>
+          <h2 class="section-title" data-i18n="why-title">India – The World's Medical Tourism Capital</h2>
+          <p data-i18n="why-intro">India is globally recognised as one of the top destinations for medical treatment, combining international-quality healthcare with costs that are 60–90% lower than Western countries.</p>
           <div class="why-items">
             <div class="why-item">
               <div class="why-num">01</div>
               <div>
-                <h4>World-Class Technology</h4>
-                <p>India's top hospitals are equipped with the latest robotic surgery systems, PET-CT scanners, proton therapy, and advanced diagnostics.</p>
+                <h4 data-i18n="why1-title">World-Class Technology</h4>
+                <p data-i18n="why1-desc">India's top hospitals are equipped with the latest robotic surgery systems, PET-CT scanners, proton therapy, and advanced diagnostics.</p>
               </div>
             </div>
             <div class="why-item">
               <div class="why-num">02</div>
               <div>
-                <h4>Highly Trained Specialists</h4>
-                <p>Many Indian doctors are trained at top institutions in the USA, UK, and Europe, bringing global expertise to affordable treatment.</p>
+                <h4 data-i18n="why2-title">Highly Trained Specialists</h4>
+                <p data-i18n="why2-desc">Many Indian doctors are trained at top institutions in the USA, UK, and Europe, bringing global expertise to affordable treatment.</p>
               </div>
             </div>
             <div class="why-item">
               <div class="why-num">03</div>
               <div>
-                <h4>Dramatic Cost Savings</h4>
-                <p>Heart surgery costing \$100,000 in the US may cost \$6,000–\$10,000 in India — with equal or better outcomes.</p>
+                <h4 data-i18n="why3-title">Dramatic Cost Savings</h4>
+                <p data-i18n="why3-desc">Heart surgery costing $100,000 in the US may cost $6,000–$10,000 in India — with equal or better outcomes.</p>
               </div>
             </div>
             <div class="why-item">
               <div class="why-num">04</div>
               <div>
-                <h4>No Long Waiting Lists</h4>
-                <p>Unlike public health systems in many countries, India's private hospitals can accommodate patients within days, not months.</p>
+                <h4 data-i18n="why4-title">No Long Waiting Lists</h4>
+                <p data-i18n="why4-desc">Unlike public health systems in many countries, India's private hospitals can accommodate patients within days, not months.</p>
               </div>
             </div>
           </div>
@@ -292,37 +272,37 @@
         <div class="why-stats-col">
           <div class="india-stat-card">
             <i class="fa-solid fa-medal"></i>
-            <strong>3rd</strong>
-            <span>Globally for Medical Tourism</span>
+            <strong data-i18n="istat1-num">3rd</strong>
+            <span data-i18n="istat1-label">Globally for Medical Tourism</span>
           </div>
           <div class="india-stat-card">
             <i class="fa-solid fa-syringe"></i>
             <strong>60–90%</strong>
-            <span>Lower Cost vs. Western Nations</span>
+            <span data-i18n="istat2-label">Lower Cost vs. Western Nations</span>
           </div>
           <div class="india-stat-card">
             <i class="fa-solid fa-building-columns"></i>
             <strong>700+</strong>
-            <span>NABH/JCI Accredited Hospitals</span>
+            <span data-i18n="istat3-label">NABH/JCI Accredited Hospitals</span>
           </div>
           <div class="india-stat-card">
             <i class="fa-solid fa-stethoscope"></i>
             <strong>1.3M+</strong>
-            <span>Medical Tourists Annually</span>
+            <span data-i18n="istat4-label">Medical Tourists Annually</span>
           </div>
           <div class="india-specialties">
-            <h4>Top Treatment Specialties</h4>
+            <h4 data-i18n="spec-title">Top Treatment Specialties</h4>
             <div class="specialty-tags">
-              <span>Cardiac Surgery</span>
-              <span>Oncology</span>
-              <span>Orthopedics</span>
-              <span>Neurology</span>
-              <span>Kidney Transplant</span>
-              <span>IVF & Fertility</span>
-              <span>Ayurveda</span>
-              <span>Eye Surgery</span>
-              <span>Spine Surgery</span>
-              <span>Dental</span>
+              <span data-i18n="sp1">Cardiac Surgery</span>
+              <span data-i18n="sp2">Oncology</span>
+              <span data-i18n="sp3">Orthopedics</span>
+              <span data-i18n="sp4">Neurology</span>
+              <span data-i18n="sp5">Kidney Transplant</span>
+              <span data-i18n="sp6">IVF & Fertility</span>
+              <span data-i18n="sp7">Ayurveda</span>
+              <span data-i18n="sp8">Eye Surgery</span>
+              <span data-i18n="sp9">Spine Surgery</span>
+              <span data-i18n="sp10">Dental</span>
             </div>
           </div>
         </div>
@@ -330,63 +310,60 @@
     </div>
   </section>
 
-  <!-- ══════════════ PARTNER HOSPITALS ══════════════ -->
+  <!-- ══════════════ HOSPITALS ══════════════ -->
   <section class="section hospitals-section" id="hospitals">
     <div class="container">
       <div class="section-header center">
-        <div class="section-label">Our Network</div>
-        <h2 class="section-title">Verified Partner Hospitals Across India</h2>
-        <p class="section-desc">All our partner hospitals are NABH or JCI accredited. We have zero financial ties — we recommend based solely on what's best for you.</p>
+        <div class="section-label" data-i18n="hosp-label">Our Network</div>
+        <h2 class="section-title" data-i18n="hosp-title">Verified Partner Hospitals Across India</h2>
+        <p class="section-desc" data-i18n="hosp-desc">All our partner hospitals are NABH or JCI accredited. We have zero financial ties — we recommend based solely on what's best for you.</p>
       </div>
-
       <div class="hospital-cities">
-        <div class="city-tab active" data-city="delhi">Delhi / NCR</div>
-        <div class="city-tab" data-city="mumbai">Mumbai</div>
-        <div class="city-tab" data-city="chennai">Chennai</div>
-        <div class="city-tab" data-city="bangalore">Bangalore</div>
-        <div class="city-tab" data-city="hyderabad">Hyderabad</div>
+        <div class="city-tab active" data-city="delhi"     data-i18n="city-delhi">Delhi / NCR</div>
+        <div class="city-tab"        data-city="mumbai"    data-i18n="city-mumbai">Mumbai</div>
+        <div class="city-tab"        data-city="chennai"   data-i18n="city-chennai">Chennai</div>
+        <div class="city-tab"        data-city="bangalore" data-i18n="city-bangalore">Bangalore</div>
+        <div class="city-tab"        data-city="hyderabad" data-i18n="city-hyderabad">Hyderabad</div>
       </div>
-
       <div class="hospital-panels">
         <div class="hospital-panel active" id="panel-delhi">
           <div class="hospital-cards">
-            <div class="hosp-card"><div class="hosp-icon"><i class="fa-solid fa-h"></i></div><div><h4>AIIMS – All India Institute of Medical Sciences</h4><p>Premier public research hospital · Top cardiac & neurology</p><span class="badge">NABH</span></div></div>
-            <div class="hosp-card"><div class="hosp-icon"><i class="fa-solid fa-h"></i></div><div><h4>Medanta – The Medicity</h4><p>Multi-speciality · 1600 beds · World-class oncology</p><span class="badge">JCI & NABH</span></div></div>
-            <div class="hosp-card"><div class="hosp-icon"><i class="fa-solid fa-h"></i></div><div><h4>Fortis Memorial Research Institute</h4><p>Bone marrow transplant · Robotics · Liver transplant</p><span class="badge">JCI</span></div></div>
-            <div class="hosp-card"><div class="hosp-icon"><i class="fa-solid fa-h"></i></div><div><h4>Max Super Speciality Hospital</h4><p>Cardiology · Neurosciences · Oncology · Orthopaedics</p><span class="badge">NABH</span></div></div>
+            <div class="hosp-card"><div class="hosp-icon"><i class="fa-solid fa-h"></i></div><div><h4>AIIMS – All India Institute of Medical Sciences</h4><p data-i18n="h-aiims">Premier public research hospital · Top cardiac & neurology</p><span class="badge">NABH</span></div></div>
+            <div class="hosp-card"><div class="hosp-icon"><i class="fa-solid fa-h"></i></div><div><h4>Medanta – The Medicity</h4><p data-i18n="h-medanta">Multi-speciality · 1600 beds · World-class oncology</p><span class="badge">JCI & NABH</span></div></div>
+            <div class="hosp-card"><div class="hosp-icon"><i class="fa-solid fa-h"></i></div><div><h4>Fortis Memorial Research Institute</h4><p data-i18n="h-fortis">Bone marrow transplant · Robotics · Liver transplant</p><span class="badge">JCI</span></div></div>
+            <div class="hosp-card"><div class="hosp-icon"><i class="fa-solid fa-h"></i></div><div><h4>Max Super Speciality Hospital</h4><p data-i18n="h-max">Cardiology · Neurosciences · Oncology · Orthopaedics</p><span class="badge">NABH</span></div></div>
           </div>
         </div>
         <div class="hospital-panel" id="panel-mumbai">
           <div class="hospital-cards">
-            <div class="hosp-card"><div class="hosp-icon"><i class="fa-solid fa-h"></i></div><div><h4>Kokilaben Dhirubhai Ambani Hospital</h4><p>Robotics · CyberKnife · Gamma Knife</p><span class="badge">JCI & NABH</span></div></div>
-            <div class="hosp-card"><div class="hosp-icon"><i class="fa-solid fa-h"></i></div><div><h4>Tata Memorial Centre</h4><p>India's leading cancer hospital</p><span class="badge">NABH</span></div></div>
-            <div class="hosp-card"><div class="hosp-icon"><i class="fa-solid fa-h"></i></div><div><h4>Lilavati Hospital</h4><p>Cardiac · Kidney · Orthopaedics</p><span class="badge">NABH</span></div></div>
+            <div class="hosp-card"><div class="hosp-icon"><i class="fa-solid fa-h"></i></div><div><h4>Kokilaben Dhirubhai Ambani Hospital</h4><p data-i18n="h-koka">Robotics · CyberKnife · Gamma Knife</p><span class="badge">JCI & NABH</span></div></div>
+            <div class="hosp-card"><div class="hosp-icon"><i class="fa-solid fa-h"></i></div><div><h4>Tata Memorial Centre</h4><p data-i18n="h-tata">India's leading cancer hospital</p><span class="badge">NABH</span></div></div>
+            <div class="hosp-card"><div class="hosp-icon"><i class="fa-solid fa-h"></i></div><div><h4>Lilavati Hospital</h4><p data-i18n="h-lila">Cardiac · Kidney · Orthopaedics</p><span class="badge">NABH</span></div></div>
           </div>
         </div>
         <div class="hospital-panel" id="panel-chennai">
           <div class="hospital-cards">
-            <div class="hosp-card"><div class="hosp-icon"><i class="fa-solid fa-h"></i></div><div><h4>Apollo Hospitals Chennai</h4><p>Heart · Liver · Kidney transplants · Oncology</p><span class="badge">JCI & NABH</span></div></div>
-            <div class="hosp-card"><div class="hosp-icon"><i class="fa-solid fa-h"></i></div><div><h4>MIOT International</h4><p>Orthopaedics · Joint replacement · Spine</p><span class="badge">JCI</span></div></div>
-            <div class="hosp-card"><div class="hosp-icon"><i class="fa-solid fa-h"></i></div><div><h4>Shankar Nethralaya</h4><p>India's premier eye hospital</p><span class="badge">NABH</span></div></div>
+            <div class="hosp-card"><div class="hosp-icon"><i class="fa-solid fa-h"></i></div><div><h4>Apollo Hospitals Chennai</h4><p data-i18n="h-apollo">Heart · Liver · Kidney transplants · Oncology</p><span class="badge">JCI & NABH</span></div></div>
+            <div class="hosp-card"><div class="hosp-icon"><i class="fa-solid fa-h"></i></div><div><h4>MIOT International</h4><p data-i18n="h-miot">Orthopaedics · Joint replacement · Spine</p><span class="badge">JCI</span></div></div>
+            <div class="hosp-card"><div class="hosp-icon"><i class="fa-solid fa-h"></i></div><div><h4>Shankar Nethralaya</h4><p data-i18n="h-shankar">India's premier eye hospital</p><span class="badge">NABH</span></div></div>
           </div>
         </div>
         <div class="hospital-panel" id="panel-bangalore">
           <div class="hospital-cards">
-            <div class="hosp-card"><div class="hosp-icon"><i class="fa-solid fa-h"></i></div><div><h4>Manipal Hospital</h4><p>Neurosurgery · Cardiac · Oncology</p><span class="badge">NABH</span></div></div>
-            <div class="hosp-card"><div class="hosp-icon"><i class="fa-solid fa-h"></i></div><div><h4>Narayana Health City</h4><p>Heart surgery · Paediatric care · Transplants</p><span class="badge">JCI</span></div></div>
-            <div class="hosp-card"><div class="hosp-icon"><i class="fa-solid fa-h"></i></div><div><h4>Sakra World Hospital</h4><p>Stroke · Trauma · Orthopaedics</p><span class="badge">JCI</span></div></div>
+            <div class="hosp-card"><div class="hosp-icon"><i class="fa-solid fa-h"></i></div><div><h4>Manipal Hospital</h4><p data-i18n="h-manipal">Neurosurgery · Cardiac · Oncology</p><span class="badge">NABH</span></div></div>
+            <div class="hosp-card"><div class="hosp-icon"><i class="fa-solid fa-h"></i></div><div><h4>Narayana Health City</h4><p data-i18n="h-narayana">Heart surgery · Paediatric care · Transplants</p><span class="badge">JCI</span></div></div>
+            <div class="hosp-card"><div class="hosp-icon"><i class="fa-solid fa-h"></i></div><div><h4>Sakra World Hospital</h4><p data-i18n="h-sakra">Stroke · Trauma · Orthopaedics</p><span class="badge">JCI</span></div></div>
           </div>
         </div>
         <div class="hospital-panel" id="panel-hyderabad">
           <div class="hospital-cards">
-            <div class="hosp-card"><div class="hosp-icon"><i class="fa-solid fa-h"></i></div><div><h4>KIMS Hospital</h4><p>Multi-speciality · Cardiac · Neurology</p><span class="badge">NABH</span></div></div>
-            <div class="hosp-card"><div class="hosp-icon"><i class="fa-solid fa-h"></i></div><div><h4>Yashoda Hospitals</h4><p>Cancer · Orthopaedics · Liver</p><span class="badge">NABH</span></div></div>
-            <div class="hosp-card"><div class="hosp-icon"><i class="fa-solid fa-h"></i></div><div><h4>Apollo Hospital Jubilee Hills</h4><p>All specialities · International patient wing</p><span class="badge">JCI & NABH</span></div></div>
+            <div class="hosp-card"><div class="hosp-icon"><i class="fa-solid fa-h"></i></div><div><h4>KIMS Hospital</h4><p data-i18n="h-kims">Multi-speciality · Cardiac · Neurology</p><span class="badge">NABH</span></div></div>
+            <div class="hosp-card"><div class="hosp-icon"><i class="fa-solid fa-h"></i></div><div><h4>Yashoda Hospitals</h4><p data-i18n="h-yashoda">Cancer · Orthopaedics · Liver</p><span class="badge">NABH</span></div></div>
+            <div class="hosp-card"><div class="hosp-icon"><i class="fa-solid fa-h"></i></div><div><h4>Apollo Hospital Jubilee Hills</h4><p data-i18n="h-apolloh">All specialities · International patient wing</p><span class="badge">JCI & NABH</span></div></div>
           </div>
         </div>
       </div>
-
-      <p class="hospitals-note"><i class="fa-solid fa-info-circle"></i> This is a sample of our network. We work with 50+ hospitals across 12 Indian cities. Contact us for a personalised recommendation.</p>
+      <p class="hospitals-note"><i class="fa-solid fa-info-circle"></i> <span data-i18n="hosp-note">This is a sample of our network. We work with 50+ hospitals across 12 Indian cities. Contact us for a personalised recommendation.</span></p>
     </div>
   </section>
 
@@ -394,65 +371,44 @@
   <section class="section process-section" id="process">
     <div class="container">
       <div class="section-header center">
-        <div class="section-label">The Process</div>
-        <h2 class="section-title">How AfroCares Works — Step by Step</h2>
-        <p class="section-desc">Getting started is simple. We handle the complexity so you can focus on your health.</p>
+        <div class="section-label" data-i18n="proc-label">The Process</div>
+        <h2 class="section-title" data-i18n="proc-title">How AfroCares Works — Step by Step</h2>
+        <p class="section-desc" data-i18n="proc-desc">Getting started is simple. We handle the complexity so you can focus on your health.</p>
       </div>
       <div class="steps-timeline">
         <div class="step">
           <div class="step-num">1</div>
-          <div class="step-content">
-            <h3>Contact Us</h3>
-            <p>Reach out via WhatsApp, email, or our contact form. Share basic information about your condition, medical reports, and what kind of treatment you're seeking.</p>
-          </div>
+          <div class="step-content"><h3 data-i18n="step1-title">Contact Us</h3><p data-i18n="step1-desc">Reach out via WhatsApp, email, or our contact form. Share basic information about your condition, medical reports, and what kind of treatment you're seeking.</p></div>
         </div>
         <div class="step-connector"></div>
         <div class="step">
           <div class="step-num">2</div>
-          <div class="step-content">
-            <h3>Free Case Assessment</h3>
-            <p>Our medical coordination team reviews your case. We may consult with doctors in our network to understand the best specialties and hospitals for your condition.</p>
-          </div>
+          <div class="step-content"><h3 data-i18n="step2-title">Free Case Assessment</h3><p data-i18n="step2-desc">Our medical coordination team reviews your case. We may consult with doctors in our network to understand the best specialties and hospitals for your condition.</p></div>
         </div>
         <div class="step-connector"></div>
         <div class="step">
           <div class="step-num">3</div>
-          <div class="step-content">
-            <h3>Hospital Shortlist & Cost Estimate</h3>
-            <p>We share 2–3 verified hospital options with treatment plans and transparent cost estimates. No pressure — you choose what feels right for you.</p>
-          </div>
+          <div class="step-content"><h3 data-i18n="step3-title">Hospital Shortlist & Cost Estimate</h3><p data-i18n="step3-desc">We share 2–3 verified hospital options with treatment plans and transparent cost estimates. No pressure — you choose what feels right for you.</p></div>
         </div>
         <div class="step-connector"></div>
         <div class="step">
           <div class="step-num">4</div>
-          <div class="step-content">
-            <h3>Visa & Travel Guidance</h3>
-            <p>We provide a medical visa invitation letter and walk you through the Indian medical visa application process for your country.</p>
-          </div>
+          <div class="step-content"><h3 data-i18n="step4-title">Visa & Travel Guidance</h3><p data-i18n="step4-desc">We provide a medical visa invitation letter and walk you through the Indian medical visa application process for your country.</p></div>
         </div>
         <div class="step-connector"></div>
         <div class="step">
           <div class="step-num">5</div>
-          <div class="step-content">
-            <h3>Arrive in India — We're Here</h3>
-            <p>Our team coordinates your airport reception, hospital admission, and local needs. You are never alone on the ground in India.</p>
-          </div>
+          <div class="step-content"><h3 data-i18n="step5-title">Arrive in India — We're Here</h3><p data-i18n="step5-desc">Our team coordinates your airport reception, hospital admission, and local needs. You are never alone on the ground in India.</p></div>
         </div>
         <div class="step-connector"></div>
         <div class="step">
           <div class="step-num">6</div>
-          <div class="step-content">
-            <h3>Treatment & Support</h3>
-            <p>Receive your treatment with our team available 24/7 to assist with communication, hospital liaison, accommodation, and any emergencies.</p>
-          </div>
+          <div class="step-content"><h3 data-i18n="step6-title">Treatment & Support</h3><p data-i18n="step6-desc">Receive your treatment with our team available 24/7 to assist with communication, hospital liaison, accommodation, and any emergencies.</p></div>
         </div>
         <div class="step-connector"></div>
         <div class="step">
           <div class="step-num">7</div>
-          <div class="step-content">
-            <h3>Return Home & Follow-Up</h3>
-            <p>We help you get discharge documents, medication lists, and connect you with teleconsultation options for continued care in your home country.</p>
-          </div>
+          <div class="step-content"><h3 data-i18n="step7-title">Return Home & Follow-Up</h3><p data-i18n="step7-desc">We help you get discharge documents, medication lists, and connect you with teleconsultation options for continued care in your home country.</p></div>
         </div>
       </div>
     </div>
@@ -462,93 +418,73 @@
   <section class="section testimonials-section" id="testimonials">
     <div class="container">
       <div class="section-header center">
-        <div class="section-label">Patient Stories</div>
-        <h2 class="section-title">Lives Changed. Stories Shared.</h2>
-        <p class="section-desc">Real experiences from real patients who came to India through AfroCares.</p>
+        <div class="section-label" data-i18n="test-label">Patient Stories</div>
+        <h2 class="section-title" data-i18n="test-title">Lives Changed. Stories Shared.</h2>
+        <p class="section-desc" data-i18n="test-desc">Real experiences from real patients who came to India through AfroCares.</p>
       </div>
       <div class="testimonials-slider" id="testimonialsSlider">
-
         <div class="testimonial-card active">
           <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
-          <p>"I was nearly scammed by an agent who took ₹50,000 from me and disappeared. AfroCares not only helped me report it but arranged my actual liver transplant at Medanta. I am alive because of them."</p>
+          <p data-i18n="t1-text">"I was nearly scammed by an agent who took ₹50,000 from me and disappeared. AfroCares not only helped me report it but arranged my actual liver transplant at Medanta. I am alive because of them."</p>
           <div class="testimonial-author">
             <div class="author-avatar"><i class="fa-solid fa-user"></i></div>
-            <div>
-              <strong>Emmanuel O.</strong>
-              <span>Nigeria · Liver Transplant Patient</span>
-            </div>
+            <div><strong>Emmanuel O.</strong><span data-i18n="t1-info">Nigeria · Liver Transplant Patient</span></div>
           </div>
         </div>
-
         <div class="testimonial-card">
           <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
-          <p>"My mother needed a hip replacement. Back home the wait was 2 years. Through AfroCares we came to Chennai — the surgery was done in 10 days at a fraction of the UK cost. The team was with us every step."</p>
+          <p data-i18n="t2-text">"My mother needed a hip replacement. Back home the wait was 2 years. Through AfroCares we came to Chennai — the surgery was done in 10 days at a fraction of the UK cost. The team was with us every step."</p>
           <div class="testimonial-author">
             <div class="author-avatar"><i class="fa-solid fa-user"></i></div>
-            <div>
-              <strong>Amara K.</strong>
-              <span>Kenya · Hip Replacement</span>
-            </div>
+            <div><strong>Amara K.</strong><span data-i18n="t2-info">Kenya · Hip Replacement</span></div>
           </div>
         </div>
-
         <div class="testimonial-card">
           <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
-          <p>"We found AfroCares on a Facebook group. At first I was sceptical — how can it be free? But they genuinely helped us with everything. My son's cardiac surgery at Narayana was successful. No words can express our gratitude."</p>
+          <p data-i18n="t3-text">"We found AfroCares on a Facebook group. At first I was sceptical — how can it be free? But they genuinely helped us with everything. My son's cardiac surgery at Narayana was successful. No words can express our gratitude."</p>
           <div class="testimonial-author">
             <div class="author-avatar"><i class="fa-solid fa-user"></i></div>
-            <div>
-              <strong>Fatuma A.</strong>
-              <span>Tanzania · Paediatric Cardiac Surgery</span>
-            </div>
+            <div><strong>Fatuma A.</strong><span data-i18n="t3-info">Tanzania · Paediatric Cardiac Surgery</span></div>
           </div>
         </div>
-
         <div class="testimonial-card">
           <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
-          <p>"I had been told I needed chemotherapy but wanted a second opinion. AfroCares connected me with an oncologist at Tata Memorial who confirmed a different, less invasive treatment. It changed my life completely."</p>
+          <p data-i18n="t4-text">"I had been told I needed chemotherapy but wanted a second opinion. AfroCares connected me with an oncologist at Tata Memorial who confirmed a different, less invasive treatment. It changed my life completely."</p>
           <div class="testimonial-author">
             <div class="author-avatar"><i class="fa-solid fa-user"></i></div>
-            <div>
-              <strong>Grace M.</strong>
-              <span>Zimbabwe · Cancer Second Opinion</span>
-            </div>
+            <div><strong>Grace M.</strong><span data-i18n="t4-info">Zimbabwe · Cancer Second Opinion</span></div>
           </div>
         </div>
-
       </div>
       <div class="slider-controls">
         <button class="slider-btn" id="prevBtn"><i class="fa-solid fa-chevron-left"></i></button>
         <div class="slider-dots" id="sliderDots">
-          <span class="dot active"></span>
-          <span class="dot"></span>
-          <span class="dot"></span>
-          <span class="dot"></span>
+          <span class="dot active"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span>
         </div>
         <button class="slider-btn" id="nextBtn"><i class="fa-solid fa-chevron-right"></i></button>
       </div>
     </div>
   </section>
 
-  <!-- ══════════════ DONATE / SUPPORT ══════════════ -->
+  <!-- ══════════════ DONATE ══════════════ -->
   <section class="donate-section">
     <div class="container">
       <div class="donate-box">
         <div class="donate-text">
-          <div class="section-label light">Support Our Work</div>
-          <h2>Help Us Keep It Free for Every Patient</h2>
-          <p>AfroCares charges patients nothing. We survive on donations from individuals, corporates, and diaspora communities who believe healthcare guidance should be a right, not a privilege. Your donation directly funds our coordinators, translation services, and emergency patient support.</p>
+          <div class="section-label light" data-i18n="don-label">Support Our Work</div>
+          <h2 data-i18n="don-title">Help Us Keep It Free for Every Patient</h2>
+          <p data-i18n="don-desc">AfroCares charges patients nothing. We survive on donations from individuals, corporates, and diaspora communities who believe healthcare guidance should be a right, not a privilege. Your donation directly funds our coordinators, translation services, and emergency patient support.</p>
           <div class="donate-impact">
-            <div class="impact-item"><strong>\$25</strong><span>Funds one patient consultation</span></div>
-            <div class="impact-item"><strong>\$100</strong><span>Covers interpretation for a full hospital visit</span></div>
-            <div class="impact-item"><strong>\$500</strong><span>Supports one complete patient journey</span></div>
+            <div class="impact-item"><strong>$25</strong><span data-i18n="imp1">Funds one patient consultation</span></div>
+            <div class="impact-item"><strong>$100</strong><span data-i18n="imp2">Covers interpretation for a full hospital visit</span></div>
+            <div class="impact-item"><strong>$500</strong><span data-i18n="imp3">Supports one complete patient journey</span></div>
           </div>
         </div>
         <div class="donate-action">
           <i class="fa-solid fa-heart donate-heart"></i>
-          <h3>Every Donation Saves a Life</h3>
-          <a href="#contact" class="btn btn-white">Donate or Partner With Us</a>
-          <p class="tax-note"><i class="fa-solid fa-file-invoice"></i> Donations may be tax-exempt under Indian 80G and FCRA provisions. Contact us for details.</p>
+          <h3 data-i18n="don-action-title">Every Donation Saves a Life</h3>
+          <a href="#contact" class="btn btn-white"><span data-i18n="don-btn">Donate or Partner With Us</span></a>
+          <p class="tax-note"><i class="fa-solid fa-file-invoice"></i> <span data-i18n="don-tax">Donations may be tax-exempt under Indian 80G and FCRA provisions. Contact us for details.</span></p>
         </div>
       </div>
     </div>
@@ -558,52 +494,33 @@
   <section class="section contact-section" id="contact">
     <div class="container">
       <div class="section-header center">
-        <div class="section-label">Get In Touch</div>
-        <h2 class="section-title">Start Your Free Consultation Today</h2>
-        <p class="section-desc">Fill in the form below and our team will respond within 24 hours. All consultations are strictly confidential and completely free.</p>
+        <div class="section-label" data-i18n="con-label">Get In Touch</div>
+        <h2 class="section-title" data-i18n="con-title">Start Your Free Consultation Today</h2>
+        <p class="section-desc" data-i18n="con-desc">Fill in the form below and our team will respond within 24 hours. All consultations are strictly confidential and completely free.</p>
       </div>
-
       <div class="contact-grid">
         <div class="contact-info">
-          <h3>Reach Us Directly</h3>
-
+          <h3 data-i18n="con-reach">Reach Us Directly</h3>
           <div class="contact-item">
             <div class="ci-icon"><i class="fa-brands fa-whatsapp"></i></div>
-            <div>
-              <strong>WhatsApp (Fastest)</strong>
-              <a href="https://wa.me/919999999999">+91 99999 99999</a>
-            </div>
+            <div><strong data-i18n="con-wa-label">WhatsApp (Fastest)</strong><a href="https://wa.me/919999999999">+91 99999 99999</a></div>
           </div>
-
           <div class="contact-item">
             <div class="ci-icon"><i class="fa-solid fa-envelope"></i></div>
-            <div>
-              <strong>Email</strong>
-              <a href="mailto:help@afrocares.org">help@afrocares.org</a>
-            </div>
+            <div><strong data-i18n="con-email-label">Email</strong><a href="mailto:help@afrocares.org">help@afrocares.org</a></div>
           </div>
-
           <div class="contact-item">
             <div class="ci-icon"><i class="fa-solid fa-phone"></i></div>
-            <div>
-              <strong>Phone (India)</strong>
-              <a href="tel:+919999999999">+91 99999 99999</a>
-            </div>
+            <div><strong data-i18n="con-phone-label">Phone (India)</strong><a href="tel:+919999999999">+91 99999 99999</a></div>
           </div>
-
           <div class="contact-item">
             <div class="ci-icon"><i class="fa-solid fa-location-dot"></i></div>
-            <div>
-              <strong>Office Address</strong>
-              <span>AfroCares NGO, New Delhi, India – 110001</span>
-            </div>
+            <div><strong data-i18n="con-addr-label">Office Address</strong><span data-i18n="con-addr">AfroCares NGO, New Delhi, India – 110001</span></div>
           </div>
-
           <div class="contact-hours">
             <i class="fa-solid fa-clock"></i>
-            <span>Support Available: Mon–Sat, 9 AM – 8 PM IST · Emergency WhatsApp: 24/7</span>
+            <span data-i18n="con-hours">Support Available: Mon–Sat, 9 AM – 8 PM IST · Emergency WhatsApp: 24/7</span>
           </div>
-
           <div class="social-links">
             <a href="#" class="social-btn"><i class="fa-brands fa-facebook"></i></a>
             <a href="#" class="social-btn"><i class="fa-brands fa-whatsapp"></i></a>
@@ -612,62 +529,61 @@
             <a href="#" class="social-btn"><i class="fa-brands fa-twitter"></i></a>
           </div>
         </div>
-
         <div class="contact-form-wrap">
           <form id="contactForm" class="contact-form" novalidate>
             <div class="form-row">
               <div class="form-group">
-                <label>Full Name *</label>
-                <input type="text" name="name" placeholder="Your full name" required />
+                <label data-i18n="f-name">Full Name *</label>
+                <input type="text" name="name" data-i18n-ph="f-name-ph" placeholder="Your full name" required />
               </div>
               <div class="form-group">
-                <label>Country *</label>
-                <input type="text" name="country" placeholder="Your country" required />
+                <label data-i18n="f-country">Country *</label>
+                <input type="text" name="country" data-i18n-ph="f-country-ph" placeholder="Your country" required />
               </div>
             </div>
             <div class="form-row">
               <div class="form-group">
-                <label>Email Address *</label>
+                <label data-i18n="f-email">Email Address *</label>
                 <input type="email" name="email" placeholder="your@email.com" required />
               </div>
               <div class="form-group">
-                <label>WhatsApp Number</label>
+                <label data-i18n="f-wa">WhatsApp Number</label>
                 <input type="tel" name="whatsapp" placeholder="+1 234 567 8900" />
               </div>
             </div>
             <div class="form-group">
-              <label>Medical Condition / Treatment Needed *</label>
+              <label data-i18n="f-spec">Medical Condition / Treatment Needed *</label>
               <select name="specialty" required>
-                <option value="">Select treatment specialty...</option>
-                <option>Cardiac Surgery / Heart Treatment</option>
-                <option>Cancer / Oncology</option>
-                <option>Orthopaedics / Joint Replacement</option>
-                <option>Neurology / Brain / Spine</option>
-                <option>Kidney / Liver / Organ Transplant</option>
-                <option>IVF / Fertility Treatment</option>
-                <option>Eye Surgery / Ophthalmology</option>
-                <option>Ayurveda / Holistic Treatment</option>
-                <option>Dental Treatment</option>
-                <option>Second Medical Opinion</option>
-                <option>Scam Report / Help</option>
-                <option>Other</option>
+                <option value="" data-i18n="f-spec-ph">Select treatment specialty...</option>
+                <option data-i18n="f-opt1">Cardiac Surgery / Heart Treatment</option>
+                <option data-i18n="f-opt2">Cancer / Oncology</option>
+                <option data-i18n="f-opt3">Orthopaedics / Joint Replacement</option>
+                <option data-i18n="f-opt4">Neurology / Brain / Spine</option>
+                <option data-i18n="f-opt5">Kidney / Liver / Organ Transplant</option>
+                <option data-i18n="f-opt6">IVF / Fertility Treatment</option>
+                <option data-i18n="f-opt7">Eye Surgery / Ophthalmology</option>
+                <option data-i18n="f-opt8">Ayurveda / Holistic Treatment</option>
+                <option data-i18n="f-opt9">Dental Treatment</option>
+                <option data-i18n="f-opt10">Second Medical Opinion</option>
+                <option data-i18n="f-opt11">Scam Report / Help</option>
+                <option data-i18n="f-opt12">Other</option>
               </select>
             </div>
             <div class="form-group">
-              <label>Tell Us About Your Case</label>
-              <textarea name="message" rows="5" placeholder="Briefly describe your medical situation, any reports you have, estimated travel dates, etc."></textarea>
+              <label data-i18n="f-msg">Tell Us About Your Case</label>
+              <textarea name="message" rows="5" data-i18n-ph="f-msg-ph" placeholder="Briefly describe your medical situation, any reports you have, estimated travel dates, etc."></textarea>
             </div>
             <div class="form-check">
               <input type="checkbox" id="consent" name="consent" required />
-              <label for="consent">I understand AfroCares is a free NGO service and my information will be kept confidential and used only to assist me.</label>
+              <label for="consent" data-i18n="f-consent">I understand AfroCares is a free NGO service and my information will be kept confidential and used only to assist me.</label>
             </div>
             <button type="submit" class="btn btn-primary btn-full">
-              <i class="fa-solid fa-paper-plane"></i> Send Free Enquiry
+              <i class="fa-solid fa-paper-plane"></i> <span data-i18n="f-submit">Send Free Enquiry</span>
             </button>
             <div class="form-success" id="formSuccess">
               <i class="fa-solid fa-circle-check"></i>
-              <strong>Message Sent Successfully!</strong>
-              <p>Our team will contact you within 24 hours. For urgent matters, please WhatsApp us directly.</p>
+              <strong data-i18n="f-success-title">Message Sent Successfully!</strong>
+              <p data-i18n="f-success-desc">Our team will contact you within 24 hours. For urgent matters, please WhatsApp us directly.</p>
             </div>
           </form>
         </div>
@@ -684,46 +600,43 @@
             <div class="logo-icon logo-icon-img"><img src="logo.jpg" alt="AfroCares Logo" /></div>
             <div class="logo-text">
               <span class="logo-afro">Afro</span><span class="logo-cares">Cares</span>
-              <small>Medical NGO – India</small>
+              <small data-i18n="nav-tagline">Medical NGO – India</small>
             </div>
           </a>
-          <p>Connecting African and international patients with India's best hospitals — freely, safely, and transparently.</p>
+          <p data-i18n="foot-desc">Connecting African and international patients with India's best hospitals — freely, safely, and transparently.</p>
           <div class="footer-badges">
-            <span><i class="fa-solid fa-certificate"></i> NGO Registered India</span>
-            <span><i class="fa-solid fa-shield-halved"></i> 100% Free Service</span>
+            <span><i class="fa-solid fa-certificate"></i> <span data-i18n="foot-badge1">NGO Registered India</span></span>
+            <span><i class="fa-solid fa-shield-halved"></i> <span data-i18n="foot-badge2">100% Free Service</span></span>
           </div>
         </div>
-
         <div class="footer-col">
-          <h4>Quick Links</h4>
+          <h4 data-i18n="foot-quick">Quick Links</h4>
           <ul>
-            <li><a href="#about">About AfroCares</a></li>
-            <li><a href="#services">Our Services</a></li>
-            <li><a href="#why-india">Why India?</a></li>
-            <li><a href="#hospitals">Partner Hospitals</a></li>
-            <li><a href="#process">How It Works</a></li>
-            <li><a href="#testimonials">Patient Stories</a></li>
+            <li><a href="#about"        data-i18n="nav-about">About AfroCares</a></li>
+            <li><a href="#services"     data-i18n="nav-services">Our Services</a></li>
+            <li><a href="#why-india"    data-i18n="nav-why">Why India?</a></li>
+            <li><a href="#hospitals"    data-i18n="nav-hospitals">Partner Hospitals</a></li>
+            <li><a href="#process"      data-i18n="nav-process">How It Works</a></li>
+            <li><a href="#testimonials" data-i18n="nav-stories">Patient Stories</a></li>
           </ul>
         </div>
-
         <div class="footer-col">
-          <h4>Medical Specialties</h4>
+          <h4 data-i18n="foot-spec">Medical Specialties</h4>
           <ul>
-            <li><a href="#contact">Cardiac Surgery</a></li>
-            <li><a href="#contact">Cancer Treatment</a></li>
-            <li><a href="#contact">Organ Transplants</a></li>
-            <li><a href="#contact">Orthopaedics</a></li>
-            <li><a href="#contact">Neurology</a></li>
-            <li><a href="#contact">IVF & Fertility</a></li>
+            <li><a href="#contact" data-i18n="sp1">Cardiac Surgery</a></li>
+            <li><a href="#contact" data-i18n="sp2">Oncology</a></li>
+            <li><a href="#contact" data-i18n="sp5">Kidney Transplant</a></li>
+            <li><a href="#contact" data-i18n="sp3">Orthopedics</a></li>
+            <li><a href="#contact" data-i18n="sp4">Neurology</a></li>
+            <li><a href="#contact" data-i18n="sp6">IVF & Fertility</a></li>
           </ul>
         </div>
-
         <div class="footer-col">
-          <h4>Contact</h4>
+          <h4 data-i18n="foot-contact">Contact</h4>
           <ul class="footer-contact-list">
             <li><i class="fa-brands fa-whatsapp"></i> +91 99999 99999</li>
             <li><i class="fa-solid fa-envelope"></i> help@afrocares.org</li>
-            <li><i class="fa-solid fa-location-dot"></i> New Delhi, India</li>
+            <li><i class="fa-solid fa-location-dot"></i> <span data-i18n="foot-loc">New Delhi, India</span></li>
           </ul>
           <div class="social-links mt-20">
             <a href="#" class="social-btn small"><i class="fa-brands fa-facebook"></i></a>
@@ -733,25 +646,24 @@
           </div>
         </div>
       </div>
-
       <div class="footer-bottom">
-        <p>© 2024 AfroCares. All rights reserved. Registered NGO under the Indian Societies Registration Act.</p>
+        <p data-i18n="foot-copy">© 2024 AfroCares. All rights reserved. Registered NGO under the Indian Societies Registration Act.</p>
         <div class="footer-links">
-          <a href="#">Privacy Policy</a>
-          <a href="#">Terms of Use</a>
-          <a href="#">Report a Scam</a>
+          <a href="#" data-i18n="foot-privacy">Privacy Policy</a>
+          <a href="#" data-i18n="foot-terms">Terms of Use</a>
+          <a href="#" data-i18n="foot-report">Report a Scam</a>
         </div>
       </div>
     </div>
   </footer>
 
-  <!-- WhatsApp Floating Button -->
-  <a href="https://wa.me/919999999999" class="whatsapp-float" target="_blank" rel="noopener" title="Chat on WhatsApp">
+  <!-- WhatsApp Float -->
+  <a href="https://wa.me/919999999999" class="whatsapp-float" target="_blank" rel="noopener">
     <i class="fa-brands fa-whatsapp"></i>
-    <span>Need Help?</span>
+    <span data-i18n="wa-float">Need Help?</span>
   </a>
 
-  <!-- Back to top -->
+  <!-- Back to Top -->
   <button class="back-to-top" id="backToTop" aria-label="Back to top">
     <i class="fa-solid fa-chevron-up"></i>
   </button>
@@ -759,4 +671,3 @@
   <script src="script.js"></script>
 </body>
 </html>
-
